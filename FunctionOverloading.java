@@ -1,18 +1,18 @@
 public class FunctionOverloading {
-    public int add(int a,int b)    {
-        return a+b;
+    void add(int a,int b)    {
+        System.out.println(a+b);
     }
-    public double add(double a,double b)    {
-        return a+b;
+    void add(float a,float b)    {
+        System.out.println(a+b);
     }
-    public int add()    {
+    void add()    {
         int a=10,b=20;
-        return a+b;
+        System.out.println(a+b);
     }
     public static void main(String[] args) {
         FunctionOverloading fo = new FunctionOverloading();
-        System.out.println(fo.add());
-        System.out.println(fo.add(10, 5));
-        System.out.println(fo.add(10.5, 20.5));
+        fo.add();
+        fo.add(30,20);
+        fo.add(10.1f,10.5f);
     }
 }
