@@ -13,5 +13,4 @@ public class Grid extends Applet {
         }
     }   
 }
-
-
+/*<applet code = "Grid.class" width = 500 height = 500></applet>*/
